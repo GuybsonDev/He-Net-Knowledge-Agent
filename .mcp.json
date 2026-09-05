@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "henet-kb": {
+      "command": ".venv/bin/henet-kb-mcp",
+      "args": ["--transport", "stdio"]
+    }
+  }
+}
