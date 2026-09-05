@@ -1,0 +1,56 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file: .env
+    environment:
+      CHROMA_HOST: chroma
+      CHROMA_PORT: "8000"
+      CHECKPOINT_DB: /app/data/checkpoints.sqlite
+      CORS_ORIGINS: http://localhost:3000
+    volumes:
+      - api-data:/app/data
+    depends_on:
+      - chroma
+
+  chroma:
+    image: chromadb/chroma:1.0.15
+    ports:
+      - "8001:8000"
+    volumes:
+      - chroma-data:/data
+    environment:
+      IS_PERSISTENT: "TRUE"
+      ANONYMIZED_TELEMETRY: "FALSE"
+
+  # Local WordPress used to exercise the REST connector. Not needed in production.
+  wordpress:
+    image: wordpress:6.7-php8.3-apache
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wp-data:/var/www/html
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: mariadb:11
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: wordpress
+      MARIADB_ROOT_PASSWORD: root
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  api-data:
+  chroma-data:
+  wp-data:
+  db-data:
