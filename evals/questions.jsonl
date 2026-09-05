@@ -1,0 +1,10 @@
+{"id": "q01", "question": "Quais velocidades de internet fibra a He-Net oferece?", "expected_answer": "Planos de fibra com velocidades como 500, 700 e 900 mega", "expected_url": "https://henet.com.br/internet"}
+{"id": "q02", "question": "A He-Net tem planos de TV? Quais canais ou pacotes existem?", "expected_answer": "Sim, há pacotes de TV por assinatura", "expected_url": "https://henet.com.br/tv"}
+{"id": "q03", "question": "Como monto um combo de internet e TV na He-Net?", "expected_answer": "Pela página Monte seu combo, escolhendo internet, TV e móvel", "expected_url": "https://henet.com.br/monte-seu-combo"}
+{"id": "q04", "question": "Quais são os canais de atendimento da He-Net?", "expected_answer": "Telefone, WhatsApp e formulário na página Fale Conosco", "expected_url": "https://henet.com.br/fale-conosco"}
+{"id": "q05", "question": "O que a He-Net oferece para empresas?", "expected_answer": "Soluções empresariais como link dedicado e internet corporativa", "expected_url": "https://henet.com.br/solucoes-empresariais"}
+{"id": "q06", "question": "Quais sinais indicam que uma empresa precisa de link dedicado?", "expected_answer": "Quedas frequentes, lentidão em horário de pico, dependência de nuvem e videoconferência", "expected_url": "https://henet.com.br/blog/sinais-empresa-link-dedicado"}
+{"id": "q07", "question": "Quais tecnologias de rede um pequeno provedor deve conhecer?", "expected_answer": "Fibra óptica, Wi-Fi 6, redes definidas por software e automação", "expected_url": "https://henet.com.br/blog/novas-tecnologias-rede-pequeno-provedor"}
+{"id": "q08", "question": "Como a He-Net trata meus dados pessoais?", "expected_answer": "Conforme a política de privacidade, com base na LGPD", "expected_url": "https://henet.com.br/politica-de-privacidade"}
+{"id": "q09", "question": "O que é o Mundo He-Net?", "expected_answer": "Programa de benefícios e conteúdos para clientes", "expected_url": "https://henet.com.br/mundo-he-net"}
+{"id": "q10", "question": "Onde encontro os termos e condições dos serviços da He-Net?", "expected_answer": "Na página de termos e condições do site", "expected_url": "https://henet.com.br/termos-e-condicoes"}
